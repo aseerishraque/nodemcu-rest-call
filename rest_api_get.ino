@@ -99,7 +99,7 @@ void makeHTTPRequest(char machine_id[], char card_id[])
   strcat(restStr, machine_id);
   strcat(restStr, "/");
   strcat(restStr, card_id);
-  Serial.print(restStr);
+//  Serial.print(restStr);
   client.print(strcat("/api/card-id/", restStr)); // %2C == ,
 
   // HTTP 1.0 is ideal as the response wont be chunked
